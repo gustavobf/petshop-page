@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Pet Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../js/index.js"></script>
+    <link rel="icon" href="imagens/icon.png">
+</head>
+
+<body>
+    <div class="containerForm">
+        <div class="divLogin">
+            <div class="cardLogin">
+                <form class="login" id="loginForm" onsubmit="return formEhValido()" action="main.html"
+                    method="POST">
+                    <div class="lblLogin">
+                        <input type="text" class="inpLogin" placeholder="Usuário" name="usuario" required>
+                    </div>
+                    <div class="lblLogin">
+                        <input type="password" class="inpLogin" placeholder="Senha" name="senha" required>
+                    </div>
+                    <button class="divSubmit" id="btnLogin">
+                        <span class="spanLogin">Acessar</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="col-footer">
+            <span class="spanImgNav"><a href="main.html"><img class="boxIconeNav" src="imagens/icone.svg"
+                        alt=""></a></span>
+        </div>
+        <div class="col-footer">
+            <p>Desenvolvido por: <span>Gustavo Batista</span></p>
+        </div>
+        <div class="col-footer">
+            <p>Telefone: (99)9999-9999 </p>
+        </div>
+    </footer>
+</body>
+
+
+</html>

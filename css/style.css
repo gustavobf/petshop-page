@@ -1,0 +1,400 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+span {
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #27389B;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #27389B;
+    color: white;
+    margin-top: auto;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
+
+.reset-style, .reset-style * {
+    all: unset;
+}
+
+/* Menu */
+a:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+}
+
+.listaNavegacao {
+    list-style-type: none;
+}
+
+.listaNavegacao>li {
+    display: inline-block;
+    margin: 3px;
+    padding: 3px;
+}
+
+.boxIconeNav {
+    width: 10%;
+    height: 10%;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.iconeNav {
+    width: 100%;
+    height: 100%;
+}
+
+.spanImgNav {
+    text-align: center;
+    width: 20%;
+}
+/* Login */
+.spanLogin {
+    margin: 0 auto;
+}
+
+.login {
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.lblLogin {
+    padding: 20px 0px;
+}
+
+.inpLogin, .inpContato {
+    border: none;
+    border-bottom: 2px solid #D1D1D4;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 90%;
+    transition: .2s;
+    position: relative;
+    color: white;
+}
+
+.inpLogin:active,
+.inpLogin:focus,
+.inpLogin:hover,
+.inpContato:active,
+.inpContato:focus,
+.inpContato:hover {
+    outline: none;
+    border-bottom-color: #27389B;
+}
+
+.divSubmit {
+    background: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    padding: 15px 15px;
+    border-radius: 26px;
+    border: 1px solid #27389B;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: black;
+    box-shadow: 0.5px black;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.divSubmit:active,
+.divSubmit:focus,
+.divSubmit:hover {
+    border-color: #27389B;
+    outline: none;
+}
+
+.divLogin {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.cardLogin {
+    width: 360px;
+    height: 280px;
+    box-shadow: 0px 0px 7px black;
+    border-radius: 10px;
+}
+
+/* Principal */
+.quadroInstitucional {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px auto;
+}
+
+.videoInstitucional {
+    border-bottom: 2px solid #27389B;
+}
+
+.container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    color: white;
+}
+
+.containerForm {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.trabalhos {
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    width: 600px;
+}
+
+td {
+    border-bottom: 2px solid #27389B;
+}
+
+.produtos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.card {
+    border: 5px solid #27389B;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    width: 50%;
+    text-align: center;
+}
+
+.card>* p {
+    font-size: 14pt;
+}
+
+.imgProdutos {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #27389B;
+    border-radius: 8px 8px 0 0;
+}
+
+.produtoDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.precoAntesProduto, .precoProduto {
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+}
+
+.precoAntesProduto {
+    color: red;
+}
+
+.precoProduto {
+    color: green;
+}
+
+
+/* Contato */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    width: 100%;
+    margin: 9px;
+}
+
+.btnEnviar {
+    border: none;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formContato {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+.formContato>h1 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.inpContato {
+    width: 20em;
+}
+
+/* Nossos Pets */
+.pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardPets {
+    display: flex;
+    height: 200px;
+    width: 160px;
+    border: 2px solid #27389B;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 8px 8px 0 0;
+    flex-direction: column;
+}
+
+.imgPets {
+    height: 60%;
+    border: 1px solid #27389B;
+    border-radius: 8px 8px 0 0;
+    align-content: center;
+}
+
+.caracteristicasPets {
+    font-size: 15px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caracteristicasPets>p {
+    margin: 2px;
+    padding: 0px;
+}
+
+/* Sobre */
+.sobre, .historia, .colSobre, .boxHistoria {
+    display: flex;
+    text-align: justify;
+    font-size: 12pt;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.sobre {
+    width: 50%;
+    flex-direction: column;
+    margin-left: 15px;
+    border-left: 3px solid #27389B;
+}
+
+.historia {
+    width: 100%;
+}
+
+.colSobre {
+    width: 50%;
+}
+
+.boxHistoria {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 15px;
+    border-right: 3px solid #27389B;
+}
+
+.h2QuemSomos {
+    margin-top: 15px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.mapa {
+    color: white;
+    text-align: center;
+    border-top: 3px solid #27389B;
+    width: calc(100% - 550px);
+    margin: 10px auto;
+}
+
+.mapa-conteudo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+/* Rodapé */
+footer>.col-footer {
+    width: 15%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
