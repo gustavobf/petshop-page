@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Meu Pet Shop</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="../js/index.js"></script>
     <link rel="icon" href="imagens/icon.png">
 </head>
 
@@ -23,33 +24,26 @@
         </nav>
     </header>
     <div class="containerForm">
+        <div class="divLogin">
+            <div class="cardLogin">
+                <form class="login" id="loginForm" onsubmit="return formEhValido()" action="login.html" method="POST">
+                    <div class="lblLogin">
+                        <input type="text" class="inpLogin" placeholder="Usuário" name="usuario" required>
+                    </div>
+                    <div class="lblLogin">
+                        <input type="password" class="inpLogin" placeholder="Senha" name="senha" required>
+                    </div>
+                    <button class="divSubmit" id="btnLogin">
+                        <span class="spanLogin">Acessar</span>
+                    </button>
+                </form>
+            </div>
+        </div>
 
-        <form action="contato.html" method="GET" class="formContato">
-            <h1>Fale com a nossa equipe!</h1>
-            <div class="row">
-                <div class="col">
-                    <input class="inpContato" type="text" name="nome" id="nome" placeholder="Nome">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input class="inpContato" type="email" name="email" id="email" placeholder="Email">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <textarea class="inpContato boxMensagem" type="text" name="message" id="message"
-                        placeholder="Mensagem"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <input class="btnEnviar" type="submit" value="Enviar">
-            </div>
-        </form>
     </div>
     <footer>
         <div class="col-footer">
-            <span class="spanImgNav"><a href="index.html"><img class="boxIconeNav" src="imagens/icone.svg"
+            <span class="spanImgNav"><a href="main.html"><img class="boxIconeNav" src="imagens/icone.svg"
                         alt=""></a></span>
         </div>
         <div class="col-footer">
@@ -60,5 +54,6 @@
         </div>
     </footer>
 </body>
+
 
 </html>

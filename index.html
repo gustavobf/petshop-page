@@ -5,29 +5,77 @@
     <meta charset="UTF-8">
     <title>Meu Pet Shop</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="../js/index.js"></script>
     <link rel="icon" href="imagens/icon.png">
 </head>
 
 <body>
-    <div class="containerForm">
-        <div class="divLogin">
-            <div class="cardLogin">
-                <form class="login" id="loginForm" onsubmit="return formEhValido()" action="main.html"
-                    method="POST">
-                    <div class="lblLogin">
-                        <input type="text" class="inpLogin" placeholder="Usuário" name="usuario" required>
-                    </div>
-                    <div class="lblLogin">
-                        <input type="password" class="inpLogin" placeholder="Senha" name="senha" required>
-                    </div>
-                    <button class="divSubmit" id="btnLogin">
-                        <span class="spanLogin">Acessar</span>
-                    </button>
-                </form>
-            </div>
-        </div>
+    <header>
+        <span class="spanImgNav"><a href="main.html">Meu Pet Shop<img class="boxIconeNav" src="imagens/icone.svg"
+                    alt=""></a></span>
+        <nav>
+            <ul class="listaNavegacao">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quemSomos.html">Quem Somos</a></li>
+                <li><a href="nossosPets.html">Nossos Pets</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="quadroInstitucional">
+            <iframe class="videoInstitucional" width="560" height="315" src="https://www.youtube.com/embed/u5UKVRLv6eY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
+            <table class="trabalhos" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th></th>
+                    <th>Preço</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td>Banho</td>
+                    <td>R$ 80,00</td>
+                    <td>Um banho refrescante!</td>
+                </tr>
+                <tr>
+                    <td>Tosa</td>
+                    <td>R$ 150,00</td>
+                    <td>Seu Pet limpo e cheiroso!</td>
+                </tr>
+                <tr>
+                    <td>Consulta com veterinario</td>
+                    <td>R$ 4,50</td>
+                    <td>Os melhores cuidados médicos!</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+
+        </section>
+
+        <section class="produtos">
+            <div class="card">
+                <img class="imgProdutos" src="imagens/produto2.jpg" alt="">
+                <div class="produtoDesc">
+                    <p>Credeli para Cães de 2,6 a 5 Kg (10 mg) - Antipulgas</p>
+                    <p>De: <del class="precoAntesProduto">R$50,42</del></p>
+                    <p>Por apenas: <span class="precoProduto">R$38,61</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imgProdutos" src="imagens/produto1.png" alt="">
+                <div class="produtoDesc">
+                    <p>Antipulgas, Carrapatos e Vermífugo Effipro para Cães de 15,1 a 30 Kg</p>
+                    <p>De: <del class="precoAntesProduto">R$110,98</del></p>
+                    <p>Por apenas: <span class="precoProduto">R$89,03</span></p>
+                </div>
+            </div>
+        </section>
     </div>
     <footer>
         <div class="col-footer">
@@ -42,6 +90,5 @@
         </div>
     </footer>
 </body>
-
 
 </html>

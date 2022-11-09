@@ -4,5 +4,5 @@ function formEhValido() {
 }
 
 function logar() {
-    window.location.href="../main.html"
+    window.location.href="../login.html"
 }
